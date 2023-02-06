@@ -25,11 +25,11 @@ module.exports = {
           defaultLanguage: `en`,
           enabledLanguages: [
             `en`,
-            `dan`,
+            `da`,
             // add an object here if you've renamed a langcode in Drupal
             {
               langCode: `en-gb`,
-              as: `dan`,
+              as: `da`,
             },
           ],
           translatableEntities: [`node--homepage_link`],
