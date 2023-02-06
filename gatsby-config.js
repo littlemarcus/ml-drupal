@@ -21,6 +21,20 @@ module.exports = {
           password: process.env.DRUPAL_BASIC_AUTH_PASSWORD,
         },
         fastBuilds: true,
+        languageConfig: {
+          defaultLanguage: `en`,
+          enabledLanguages: [
+            `en`,
+            `dan`,
+            // add an object here if you've renamed a langcode in Drupal
+            {
+              langCode: `en-gb`,
+              as: `dan`,
+            },
+          ],
+          translatableEntities: [`node--homepage_link`],
+          nonTranslatableEntities: [`file--file`],
+        },
       },
     },
     "gatsby-plugin-sharp",
