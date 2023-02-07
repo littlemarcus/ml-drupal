@@ -27,7 +27,11 @@ module.exports = {
             `en`,
             `da`,
           ],
-          translatableEntities: [`node--homepage_link`],
+          translatableEntities: [
+            `node--homepage_link`,
+            `node--homepage_hero`,
+            `node--about_page`,
+          ],
           nonTranslatableEntities: [`file--file`],
         },
       },
