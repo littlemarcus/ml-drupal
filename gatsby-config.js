@@ -21,19 +21,6 @@ module.exports = {
           password: process.env.DRUPAL_BASIC_AUTH_PASSWORD,
         },
         fastBuilds: true,
-        languageConfig: {
-          defaultLanguage: `en`,
-          enabledLanguages: [
-            `en`,
-            `da`,
-          ],
-          translatableEntities: [
-            `node--homepage_link`,
-            `node--homepage_hero`,
-            `node--about_page`,
-          ],
-          nonTranslatableEntities: [`file--file`],
-        },
       },
     },
     "gatsby-plugin-sharp",
